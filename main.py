@@ -14,7 +14,7 @@ async def api(slack_name: str = "Idee", track: str = "Backend"):
 
     now = datetime.utcnow()
     today = now.strftime('%A')
-    now =now.replace(microsecond=0)
+    now = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 
     response = {"slack_name": slack_name,
                 "current_day": today,
