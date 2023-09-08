@@ -14,7 +14,7 @@ async def root(slack_name: str, track: str):
                 "current_day": today,
                 "utc_time": now,
                 "track": track,
-                "github_file_url": "https",
+                "github_file_url": "https://github.com/Ideeee/hngfirsttask/blob/main/main.py",
                 "github_repo_url": "https://github.com/Ideeee/hngfirsttask",
                 "status_code": 200
                 }
