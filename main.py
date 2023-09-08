@@ -4,7 +4,13 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/")
-async def root(slack_name: str, track: str):
+async def root():
+    response = "Welcome, please navigate to the /api route and add slack_name and track as query parameters"
+    return response
+
+
+@app.get("/api")
+async def api(slack_name: str = "Idee", track: str = "Backend"):
 
     now = datetime.utcnow()
     today = now.strftime('%A')
